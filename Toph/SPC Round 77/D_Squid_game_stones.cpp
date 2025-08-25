@@ -1,0 +1,67 @@
+//**************BISMILLAHIR RAHMANIR RAHIM****************
+//*******************Md Yeasin Arafat****************
+#include<bits/stdc++.h>
+using namespace std;
+#include<ext/pb_ds/assoc_container.hpp>
+#include<ext/pb_ds/tree_policy.hpp>
+using namespace __gnu_pbds;
+typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds; // *v.find_by_order(x)=xth position e ki ache , v.order_of_key(x)==x theke kotota choto ache
+typedef tree<int, null_type, greater<int>, rb_tree_tag, tree_order_statistics_node_update> dpbds; //decending order
+typedef tree<int, null_type, less_equal<int>, rb_tree_tag, tree_order_statistics_node_update> mpbds; // work like a multiset
+//tuple  ---> get<0>(v[i]) , get<1>(v[i]) get<2>(v[i]) to access three tuple value
+#define check cout<<'?'<<endl;
+#define    ll               long long
+const int M =  1e9+7;
+const ll bM =  998244353;
+const ll INF =  1e18;
+#define    all(x)           x.begin(), x.end()
+#define    pi               acos(-1.00)
+#define rev(v) reverse(all(v));
+#define rsort(v) sort(v.rbegin(),v.rend());
+#define taking(a)  for(auto &it:a) cin>>it;
+#define printv(a)  for(auto &it:a) cout<<it<<' '; cout<<'\n'
+#define printm(a)  for(auto &[x,y]:a) cout<<x<<' '<<y<<'\n'
+#define printmv(a) for(auto [x,v]:a) {cout<<x<<'\n'; printv(v);}
+#define mkunique(x) sort(all(x));(x).erase(unique(all(x)),(x).end())
+#define bitcount(x) __builtin_popcount(x)
+#define si(x) int(x.size())
+#define VL vector<ll>
+#define P pair<ll,ll>
+#define VP vector<pair<ll,ll>>
+#define Mp map<ll,ll>
+#define MV map<ll,vl>
+const int N=1e5;
+
+
+
+
+void solve()
+{
+    int n;
+    cin>>n;
+    vector<int>v(n);
+    for(auto &it: v) cin>>it;
+    int ans=0;
+    for(auto &it:v) {
+        ans^=it;
+    }
+    if(ans==0){
+        cout<<333<<'\n';
+    }else {
+        cout<<456<<'\n';
+    }
+}
+
+
+signed main()
+{
+ ios_base::sync_with_stdio(false) , cin.tie(NULL);
+int ttt=1;
+//cin>>ttt;
+for(int tt=1; tt<=ttt; tt++) 
+{
+//cout<<"Case #"<<tt<<": ";
+solve();
+}
+    return 0;
+}
